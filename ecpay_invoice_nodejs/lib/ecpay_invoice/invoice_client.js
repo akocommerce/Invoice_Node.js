@@ -12,8 +12,8 @@ const http = require('http');
 const https = require('https');
 
 class ECpayInvoiceClient{
-    constructor(){
-        this.helper = new helper();
+    constructor(params){
+        this.helper = new helper(params);
     }
 
     ecpay_invoice_issue(parameters){
