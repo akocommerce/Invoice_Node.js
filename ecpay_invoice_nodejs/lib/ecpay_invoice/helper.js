@@ -27,7 +27,6 @@ class APIHelper {
                 throw new Error(`Specified merchant setting name (${this.active_merc_info}) not found.`);
             }
             this.date = new Date();
-            console.log(this);
             return;
         }
         this.cont = fs.readFileSync(__dirname + '/../../conf/invoice_conf.xml').toString();
